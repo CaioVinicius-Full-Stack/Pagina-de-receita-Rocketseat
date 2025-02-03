@@ -1,0 +1,151 @@
+@import url(../styles/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+:root {
+  /* Surface colors */
+
+  /* background-color */
+  --surface-color: #f0e8c2;
+  --Text-colors: #573824;
+
+  --text-color-primary: #291b1a;
+  --text-color-secondary: #573a37;
+  --text-color-on-bg: #f0e8c2;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: url(../assets/bg-image.png) lightgray 50% / cover no-repeat;
+}
+
+.Page {
+  max-width: 80rem;
+  max-height: 99.25rem;
+  margin: 3rem auto;
+
+  .Container {
+    width: 50rem;
+    height: 90rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    background: var(--surface-color);
+
+    img {
+      height: 25rem;
+      border-radius: 1rem;
+    }
+
+    main {
+      padding: 0rem 1.5rem 1.5rem 1.5rem;
+      gap: 1.5rem;
+
+      #About {
+        gap: 1.5rem;
+
+        h1 {
+          color: var(--text-color-primary);
+          font-variant-numeric: lining-nums tabular-nums;
+          font-feature-settings: "liga" off, "clig" off;
+          font-family: Alice;
+          font-size: 2.5rem;
+          font-weight: 400;
+          line-height: 140%; /* 56px */
+        }
+
+        .info {
+          gap: 0.75rem;
+
+          p {
+            color: var(--text-color-secondary);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-feature-settings: "liga" off, "clig" off;
+            font-family: Alice;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+          }
+        }
+      }
+
+      #Ingredientes {
+        margin-top: 1.5rem;
+        gap: 0.25rem;
+
+        h1 {
+          color: var(--text-color-primary);
+          font-variant-numeric: lining-nums tabular-nums;
+          font-feature-settings: "liga" off, "clig" off;
+          font-family: Alice;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 150%; /* 36px */
+        }
+        ul {
+          width: 44rem;
+          height: 21rem;
+          padding: 0.25rem 1.5rem;
+
+          li {
+            color: var(--text-color-secondary);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-feature-settings: "liga" off, "clig" off;
+            font-family: Alice;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+          }
+        }
+      }
+
+      #Modo-de-preparo {
+        margin-top: 1.5rem;
+        gap: 0.25rem;
+
+        h1 {
+          color: var(--text-color-primary);
+          font-variant-numeric: lining-nums tabular-nums;
+          font-feature-settings: "liga" off, "clig" off;
+          font-family: Alice;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 150%; /* 36px */
+        }
+
+        p {
+          color: var(--text-color-secondary);
+          font-variant-numeric: lining-nums tabular-nums;
+          font-feature-settings: "liga" off, "clig" off;
+          font-family: Alice;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+    }
+  }
+
+  #Creditos {
+    margin: 28px 40px 40px 537px;
+    gap: 4px;
+    p {
+      color: var(--text-color-on-bg);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Alice;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
