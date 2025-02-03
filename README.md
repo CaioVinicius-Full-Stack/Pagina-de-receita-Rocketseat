@@ -38,7 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Nesse projeto você vai desenvolver uma página simples de receita.
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://caiovinicius-full-stack.github.io/Pagina-de-receita-Rocketseat/)
 
 ## 🔖 Layout
 
